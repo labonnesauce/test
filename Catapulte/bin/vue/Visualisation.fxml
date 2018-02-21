@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <Pane prefHeight="102.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
+   </bottom>
+   <top>
+      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT">
+         <children>
+            <VBox prefHeight="100.0" prefWidth="114.0">
+               <children>
+                  <Label text="Vitesse" />
+                  <Label text="Distance" />
+                  <Label text="Record" />
+               </children>
+            </VBox>
+            <VBox prefHeight="100.0" prefWidth="49.0">
+               <children>
+                  <Label fx:id="labelVitesse" text="0" />
+                  <Label fx:id="labelDistance" text="0" />
+                  <Label fx:id="labelRecord" text="0" />
+               </children>
+            </VBox>
+            <VBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="44.0">
+               <children>
+                  <Label text="m/s" />
+                  <Label text="m" />
+                  <Label text="m" />
+               </children>
+            </VBox>
+            <Label />
+         </children>
+      </HBox>
+   </top>
+   <center>
+      <Pane fx:id="Ecran" prefHeight="482.0" prefWidth="1280.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>
